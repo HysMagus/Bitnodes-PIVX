@@ -25,7 +25,7 @@
 # WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 """
-Litecoin protocol access for Bitnodes.
+PIVX protocol access for Bitnodes.
 Reference: https://en.bitcoin.it/wiki/Protocol_specification
 
 -------------------------------------------------------------------------------
@@ -155,15 +155,15 @@ TESTNET3 = "testnet3"
 MAINNET_MAGIC_NUMBER = "\xF9\xBE\xB4\xD9"
 TESTNET3_MAGIC_NUMBER = "\x0B\x11\x09\x07"
 
-MAINNET_DEFAULT_PORT = 9333
+MAINNET_DEFAULT_PORT = 51472
 TESTNET3_DEFAULT_PORT = 19333
 
 MIN_PROTOCOL_VERSION = 70001
-PROTOCOL_VERSION = 70015
+PROTOCOL_VERSION = 70916
 FROM_SERVICES = 0
 TO_SERVICES = 1  # NODE_NETWORK
-USER_AGENT = "/litenodes:1.0/"
-HEIGHT = 1130000
+USER_AGENT = "/PIVX Core:3.3.0/"
+HEIGHT = 1917764
 RELAY = 0  # set to 1 to receive all txs
 
 SOCKET_BUFSIZE = 8192
@@ -933,7 +933,7 @@ class Connection(object):
 
 
 def main():
-    to_addr = ("173.209.44.34", MAINNET_DEFAULT_PORT)
+    to_addr = ("139.59.59.197", MAINNET_DEFAULT_PORT)
     to_services = TO_SERVICES
 
     handshake_msgs = []

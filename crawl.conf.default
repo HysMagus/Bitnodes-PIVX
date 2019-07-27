@@ -9,15 +9,13 @@ network = mainnet
 # List of DNS seeders to get a subset of reachable nodes
 # --- mainnet ---
 seeders =
-    seed-a.litecoin.loshan.co.uk
-    dnsseed.thrasher.io
-    dnsseed.litecointools.com
-    dnsseed.litecoinpool.org
-    dnsseed.koin-project.com
+    pivx.seed.fuzzbawls.pw
+    pivx.seed2.fuzzbawls.pw
+    dnsseed.pivx.warrows.dev
 # --- testnet3 ---
 #seeders =
-#    seed-b.litecoin.loshan.co.uk
-#    testnet-seed.litecointools.com
+#    pivx-testnet.seed.fuzzbawls.pw
+#    pivx-testnet.seed2.fuzzbawls.pw
 
 # Number of concurrent workers (greenlets)
 workers = 500
@@ -29,7 +27,7 @@ debug = False
 source_address = 0.0.0.0
 
 # Protocol version to use for outgoing version message
-protocol_version = 70015
+protocol_version = 70916
 
 # User agent (BIP 0014) to use for outgoing version message
 # -----------------------------------------------------------------------------
@@ -38,7 +36,7 @@ protocol_version = 70015
 # crawler. This is so that users will not confuse your crawler with another
 # instance that is already running and generating data for the project.
 # -----------------------------------------------------------------------------
-user_agent = /litenodes:1.0/
+user_agent = /PIVX Core:3.3.0/
 
 # Services to use for outgoing network address message
 services = 0
